@@ -26,6 +26,7 @@
 		String user_name = request.getParameter("user_name");
 		String id_number = request.getParameter("id_number");
 		String area_name = request.getParameter("area_name");
+	//	String area_name_s = request.getParameter("area_name");
 
 		int id_order = 0;
 		int i = 0;
