@@ -4,65 +4,74 @@
 <meta charset="gb18030">
 <title>准考证号抽签</title>
 
-<script type="text/javascript"> 
-        function check(){  
-            var nameValue=window.document.getElementById("uname").value;  
-			var id_numberValue=window.document.getElementById("id_number").value;  
-			var area_nameValue=window.document.getElementById("area_name").value;  
-            if (nameValue == "") // 或者是!nameValue  
-            {  
-                window.alert("姓名不能为空!");  
-                return false;  
-            }  
-			if (id_numberValue == "") // 或者是!nameValue  
-            {  
-                window.alert("身份证号不能为空!");  
-                return false;  
-            }  
-			if (area_nameValue == "") // 或者是!nameValue  
-            {  
-                window.alert("地市不能为空!");  
-                return false;  
-            }  
-            return true;  
-        }  
+<script type="text/javascript">
+	function check() {
+		var nameValue = window.document.getElementById("uname").value;
+		var id_numberValue = window.document.getElementById("id_number").value;
+		var area_nameValue = window.document.getElementById("area_name").value;
+		if (nameValue == "") // 或者是!nameValue  
+		{
+			window.alert("姓名不能为空!");
+			return false;
+		}
+		if (id_numberValue == "") // 或者是!nameValue  
+		{
+			window.alert("身份证号不能为空!");
+			return false;
+		}
+		if (area_nameValue == "") // 或者是!nameValue  
+		{
+			window.alert("地市不能为空!");
+			return false;
+		}
+		return true;
+	}
 </script>
 </head>
 <body>
 
-<br/>
-  	<br/>
-  	<br/>
-  	<br/>
-  	 <div align="center">
-  	 <h1><font color="red">准考证号抽签系统</font></h1>
-  	 </div>
-     <form action="Load.jsp" method="post" onsubmit="return check()">
-     <div align="center">
-     <h2>姓名: <input type="text"  style="{FONT-SIZE:15pt;width:120px;}"  name="user_name" id="uname"  /> </h2>
 	<br />
-	<h2>身份证号：<input type="text"  style="{FONT-SIZE:15pt;}"  style="width:200px;"  name="id_number" id="id_number"  /> </h2>
-	<br/>
-	<h2>地市：<select name="area_name" style="{FONT-SIZE:15pt;}"  id="area_name" >
-			<option value="" disabled="disabled" selected="selected">请选择地市</option>  
-			<option value="武汉">武汉</option>
-			<option value="荆州">荆州</option>
-			<option value="宜昌">宜昌</option>
-			<option value="襄阳">襄阳</option>
-			<option value="荆门">荆门</option>
-			<option value="黄石">黄石</option>
-			<option value="黄冈">黄冈</option>
-			<option value="恩施">恩施</option>
-			<option value="十堰">十堰</option>
-			<option value="孝感">孝感</option>
-			<option value="咸宁">咸宁</option>
-			<option value="随州">随州</option>
-			<option value="江汉">江汉</option>
-			<option value="鄂州">鄂州</option>
-	</select></h2>
-	<br/>
-     <input type = "submit" style="{FONT-SIZE:15pt;}" value = "点击抽签" />
-     </div>
-     </form> 
+	<br />
+	<br />
+	<br />
+	<div align="center">
+		<h1>
+			<font color="red">准考证号抽签系统</font>
+		</h1>
+	</div>
+	<form action="Load.jsp" method="post" onsubmit="return check()">
+		<div align="center">
+			<h2>
+				姓名: <input type="text" style="FONT-SIZE: 15pt; width: 120px;"
+					name="user_name" id="uname" />
+			</h2>
+			<br />
+			<h2>
+				身份证号：<input type="text" style="FONT-SIZE: 15pt;"
+					style="width:200px;" name="id_number" id="id_number" />
+			</h2>
+			<br />
+			<h2>
+				地市：<select name="area_name" style="FONT-SIZE: 15pt;" id="area_name">
+					<option value="" disabled="disabled" selected="selected">请选择地市</option>
+					<option value="武汉">武汉</option>
+					<option value="荆州">荆州</option>
+					<option value="宜昌">宜昌</option>
+					<option value="襄阳">襄阳</option>
+					<option value="荆门">荆门</option>
+					<option value="黄石">黄石</option>
+					<option value="黄冈">黄冈</option>
+					<option value="恩施">恩施</option>
+					<option value="十堰">十堰</option>
+					<option value="孝感">孝感</option>
+					<option value="咸宁">咸宁</option>
+					<option value="随州">随州</option>
+					<option value="江汉">江汉</option>
+					<option value="鄂州">鄂州</option>
+				</select>
+			</h2>
+			<br /> <input type="submit" style="FONT-SIZE: 15pt;" value="点击抽签" />
+		</div>
+	</form>
 </body>
 </html>
